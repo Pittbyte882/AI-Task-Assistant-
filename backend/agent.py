@@ -93,10 +93,11 @@ class AIAgent:
         
         # Initial API call
         response = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-3-5-sonnet-20241022",
             max_tokens=1024,
-            tools=self.tools,
             messages=messages
+            tools=self.tools
+            
         )
 
         # Process tool calls
