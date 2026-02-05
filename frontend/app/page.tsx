@@ -24,7 +24,7 @@ export default function Home() {
     setLoading(true)
 
     try {
-      const response = await fetch("ai-task-assistant-production-3c00.up.railway.app", {
+      const response = await fetch("https://ai-task-assistant-production-3c00.up.railway.app", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
