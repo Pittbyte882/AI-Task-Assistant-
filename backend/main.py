@@ -11,7 +11,7 @@ app = FastAPI(title="AI Task Assistant API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://ai-task-assistant-1pxf.vercel.app",
+        "https://ai-task-assistant-blue.vercel.app",
         "https://*.vercel.app"
     ],
     allow_credentials=True,
