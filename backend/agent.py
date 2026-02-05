@@ -95,7 +95,7 @@ class AIAgent:
         response = client.messages.create(
             model="claude-3-5-sonnet-20241022",
             max_tokens=8192,
-            messages=messages
+            messages=messages,
             tools=self.tools
             
         )
